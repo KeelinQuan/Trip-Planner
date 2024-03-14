@@ -1,0 +1,248 @@
+// mobile
+@media screen and (max-width: 576px) {
+  .nodemy {
+    .container {
+      width: 100%;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+    }
+    .navbar {
+      padding: 10px;
+      #navbarSupportedContent {
+        order: 1;
+        width: 100%;
+        background: white;
+        z-index: 9;
+        left: 0;
+        top: 100%;
+        position: absolute;
+        padding: 0 22px;
+      }
+
+      button.navbar-toggler {
+        font-size: 14px;
+        padding: 10px;
+      }
+    }
+    .content {
+      .left-content {
+        padding-left: 20px;
+        padding-right: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .hero-title {
+          font-size: 16px;
+          width: 126px;
+          height: 28px;
+        }
+        .hero-title + p {
+          display: none;
+        }
+        button {
+          height: auto;
+          border-radius: 25px;
+          padding: 3px 10px;
+          width: 100%;
+          h4 {
+            font-size: 12px;
+          }
+        }
+        .review {
+          display: none;
+        }
+        .eliment {
+          width: 40%;
+          bottom: 0 !important;
+        }
+      }
+      .right-content {
+        height: 206px;
+      }
+    }
+    .partner {
+      height: 58px;
+      overflow: scroll;
+      justify-content: flex-start;
+    }
+    .trip-planning {
+      height: 415px;
+      flex-wrap: nowrap;
+      .title {
+        h1 {
+          font-size: 24px;
+          line-height: 32px;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+      .cards {
+        margin: 30px 0;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        overflow: scroll;
+      }
+    }
+    .book-steps {
+      flex-wrap: wrap;
+      .create-trip {
+        width: 100%;
+        margin: 0 20px;
+        padding: 20px;
+        .your-trip {
+          & > div:nth-child(1) {
+            width: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+          }
+        }
+      }
+      .book-content {
+        padding: 20px;
+      }
+    }
+    .ez-trip {
+      flex-wrap: wrap;
+      .easy-trip {
+        order: 1;
+        width: 100%;
+        margin-right: unset;
+        & > h1 {
+          font-size: 24px;
+          line-height: 36px;
+          padding: 0 20px;
+        }
+        & > p {
+          font-size: 12px;
+          padding: 0 20px;
+          margin-top: 14px;
+        }
+        & > div {
+          margin-top: 20px;
+          overflow: scroll;
+        }
+      }
+      .easy-card {
+        width: 100%;
+        margin: 0 20px 20px 20px;
+      }
+    }
+    .how-work {
+      .blocl-right {
+        .mt-25 {
+          margin-top: 14px;
+        }
+        .mt-40 {
+          margin-top: 26px;
+        }
+        .mt-25 {
+          margin-left: 18px;
+        }
+        i {
+          @include circle(45px);
+        }
+      }
+    }
+    .service {
+      .container {
+        width: 100%;
+        h1 {
+          font-size: 30px;
+        }
+        & > p {
+          font-size: 12px;
+        }
+        .list-card {
+          margin: 0;
+          flex-wrap: wrap;
+          justify-content: center;
+          .card-column {
+            margin-top: 24px;
+            margin-right: 0;
+            padding: 30px 48px;
+            width: 270px;
+          }
+        }
+      }
+    }
+    .feature {
+      .container {
+        h1 {
+          font-size: 24px;
+          line-height: 30px;
+          text-align: left;
+        }
+        & > div {
+          margin-top: 30px;
+          row-gap: 24px;
+        }
+        .feature-item {
+          width: 100%;
+        }
+        i {
+          width: 38px;
+          height: 38px;
+          font-size: 24px;
+        }
+        h3 {
+          font-size: 16px;
+          line-height: 24px;
+        }
+        .mt-20 {
+          margin-top: 16px;
+        }
+        p {
+          font-size: 12px;
+          line-height: 18px;
+        }
+      }
+    }
+    .go-plan {
+      .container {
+        padding: 20px;
+        .blocl-left {
+          width: 100%;
+          h1 {
+            font-size: 24px;
+            line-height: 36px;
+          }
+          .mt-65 {
+            margin-top: 0;
+          }
+          .mt-25 {
+            margin-top: 12px;
+          }
+        }
+        .blocl-right {
+          width: 100%;
+          margin-top: 43px;
+        }
+      }
+    }
+    .footer {
+      .socials {
+        margin: 24px 0;
+      }
+      .topic {
+        width: 100%;
+        p {
+          margin-top: 14px;
+        }
+        p:first-of-type {
+          margin-top: 20px;
+        }
+      }
+      .sub-footer {
+        padding-top: 26px;
+        & > p {
+          text-align: center;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

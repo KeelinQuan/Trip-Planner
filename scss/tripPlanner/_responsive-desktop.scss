@@ -1,0 +1,482 @@
+.nodemy {
+  @mixin icon {
+    color: white;
+    font-size: 24px;
+    background: var(--primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 6px;
+    // @include shape(44px, 44px, 6px);
+  }
+  .container {
+    width: 1170px;
+    display: flex;
+    padding: 70px 0;
+  }
+  .card-column {
+    display: flex;
+    min-width: 175px;
+    padding: 22px 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 10px;
+    background: #fff;
+    margin-right: 20px;
+    box-shadow: 0px 2.21277px 8.85106px 0px rgba(15, 15, 15, 0.08);
+    img {
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+    }
+    p {
+      margin-top: 10px;
+    }
+    p:nth-child(3) {
+      font-size: 11px;
+    }
+  }
+  .navbar {
+    z-index: 2;
+    padding: 30px 60px;
+    .logo {
+      padding: 8px 10px;
+      background: var(--primary);
+      border-radius: 12px;
+      svg {
+        fill: white;
+      }
+    }
+    .info {
+      * {
+        margin: 0 5px;
+      }
+
+      .avatar {
+        width: 33px;
+        height: 33px;
+      }
+    }
+  }
+  .content {
+    .left-content {
+      position: relative;
+      padding-left: 135px;
+      .hero-title + p {
+        width: 455px;
+        margin-top: 30px !important;
+      }
+      button {
+        width: 265px;
+        height: 52px;
+        border-radius: 31px;
+        padding: 8px 8px 8px 44px;
+        i {
+          background: var(--primary);
+          width: 36px;
+          height: 36px;
+          border-radius: 50%;
+          color: white;
+        }
+      }
+      .review {
+        width: 280px;
+        height: 95px;
+        .star {
+          i {
+            color: #ffc83a;
+          }
+        }
+        .score {
+          h3 {
+            color: var(--primary);
+          }
+        }
+      }
+      .eliment {
+        position: absolute;
+        left: 0;
+        bottom: 150px;
+        transform: rotate(-19.16deg);
+      }
+    }
+    .right-content {
+      position: relative;
+      height: 645px;
+      .hero {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .partner {
+    height: 168px;
+    background: #f4f5f9;
+    img:not(:last-child) {
+      margin-right: 40px;
+    }
+  }
+  .trip-planning {
+    height: 574px;
+    flex-direction: column;
+    .title {
+      text-align: center;
+    }
+    .card-item {
+      width: 272px;
+      height: 236px;
+      padding: 21px 36px;
+      flex-direction: column;
+      text-align: center;
+      margin: 0 15px;
+      border-radius: 12px;
+      &:nth-child(1) {
+        background: #eef9f2;
+      }
+      &:nth-child(2) {
+        background: #fff4ee;
+      }
+      &:nth-child(3) {
+        background: #ebf1ff;
+      }
+      & > i {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        font-size: 25px;
+      }
+      &:nth-child(1) > i {
+        background: #58c27d;
+        color: white;
+      }
+      &:nth-child(2) > i {
+        background: #fa8f54;
+        color: white;
+      }
+      &:nth-child(3) > i {
+        background: var(--primary);
+        color: white;
+      }
+    }
+  }
+  .list {
+    .list-item {
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: url("../../image/createTrip/Ellipse-2220.svg");
+        width: 20px;
+        height: 20px;
+        margin-right: 18px;
+        display: inline-block;
+      }
+      & + .sub {
+        margin-left: 38px;
+      }
+    }
+  }
+  .book-steps {
+    .create-trip {
+      margin-right: 100px;
+      border-radius: 39px;
+      background: #fee2b6;
+      .your-trip {
+        border-radius: 30px;
+        overflow: hidden;
+        & > div:nth-child(1) {
+          width: 363px;
+          p,
+          span {
+            color: white;
+          }
+          background: var(--primary);
+          button {
+            color: inherit;
+            border-radius: 10px;
+            padding: 8px 10px 8px 16px;
+            background: white;
+            width: 250px;
+            height: 38px;
+          }
+        }
+        & > div:nth-child(2) {
+          background: white;
+          font-size: 26px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+      .book-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+    .book-content {
+      width: 538px;
+      h1 {
+        margin-bottom: 25px;
+      }
+      .list {
+        .list-item {
+          &::before {
+            content: url("../../image/createTrip/Ellipse-2220-xanh.svg");
+          }
+        }
+        padding-bottom: 26px;
+        border-bottom: 1px dashed #777e90;
+        & + p {
+          font-style: italic;
+        }
+      }
+      .profile {
+        display: flex;
+      }
+    }
+  }
+  .ez-trip {
+    background: #eaf0ff;
+    .easy-trip {
+      width: 683px;
+      margin-right: 112px;
+      & > p {
+        margin-top: 24px;
+      }
+    }
+    .easy-card {
+      width: 374px;
+      padding: 31px 24px 29px 24px;
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 14px 40px -15px rgba(15, 15, 15, 0.88);
+      .info {
+        justify-self: flex-start;
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-right: 17px;
+        }
+      }
+    }
+  }
+  .how-work {
+    .block-left {
+      width: 646px;
+      img {
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .block-right {
+      width: 433px;
+      i {
+        @include circle(60px);
+        color: var(--primary);
+        font-size: 24px;
+        box-shadow: 0px 20px 80px 0px rgba(0, 0, 0, 0.12);
+        align-self: flex-start;
+      }
+    }
+  }
+  .service {
+    background: var(--primary);
+    .container {
+      width: 1029px;
+      & > h1,
+      & > div:nth-child(2) > p {
+        text-align: center;
+        color: white;
+      }
+    }
+    .card-column {
+      min-width: 231px;
+      align-items: center;
+      padding: 25px 28px 15px 28px;
+      i {
+        @include icon();
+      }
+      &:nth-child(1) i {
+        background: var(--primary);
+      }
+      &:nth-child(2) i {
+        background: #58c27d;
+      }
+      &:nth-child(3) i {
+        background: #fa8f54;
+      }
+      &:nth-child(4) i {
+        background: #ffd166;
+      }
+    }
+  }
+  .feature {
+    .container {
+      h1 {
+        text-align: center;
+      }
+      & > div {
+        flex-wrap: wrap;
+        row-gap: 56px;
+      }
+      .feature-item {
+        width: 465px;
+        & > :nth-child(1) {
+          justify-content: flex-start;
+        }
+        i {
+          @include icon();
+          margin-right: 16px;
+        }
+        &:nth-child(1) i {
+          background: #ffd166;
+        }
+        &:nth-child(2) i {
+          background: #58c27d;
+        }
+        &:nth-child(3) i {
+          background: #ff6370;
+        }
+        &:nth-child(4) i {
+          background: var(--primary);
+        }
+      }
+    }
+  }
+  .go-plan {
+    background: rgba(251, 246, 199, 0.8);
+    .container {
+      padding: 0;
+      padding-top: 10px;
+      .block-left {
+        width: 529px;
+      }
+      .block-right {
+        width: 440px;
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .footer {
+    .subcrible-email {
+      width: 255px;
+      height: 50px;
+      border-radius: 24px;
+      border: 2px solid #e6e8ec;
+      padding: 8px 8px 8px 26px;
+      i {
+        @include icon();
+        @include circle(33px);
+      }
+      input {
+        height: 100%;
+        border: none;
+        outline: none;
+      }
+    }
+    .socials {
+      i {
+        font-size: 24px;
+        margin: 0 14px;
+      }
+    }
+    .block-left {
+      width: 268px;
+      a {
+        justify-content: flex-start;
+        .logo {
+          @include shape(40px, 40px, 12px);
+          background: var(--primary);
+          svg {
+            fill: white;
+          }
+          margin-top: 10px;
+        }
+      }
+    }
+    .topic {
+      p {
+        margin-top: 14px;
+        color: #777e90;
+      }
+      p:first-of-type {
+        margin-top: 20px;
+      }
+    }
+    .sub-footer {
+      padding-top: 40px;
+      & > p {
+        color: #b1b5c3;
+      }
+    }
+  }
+}
+
+[data-bs-theme="dark"].nodemy {
+  #navbarSupportedContent {
+    background: var(--dark) !important;
+  }
+  .partner {
+    background: var(--gray-1);
+  }
+  .trip-planning {
+    .card-item {
+      &:nth-child(1) {
+        background: #22372b;
+      }
+      &:nth-child(2) {
+        background: #422d22;
+      }
+      &:nth-child(3) {
+        background: #283558;
+      }
+    }
+  }
+  .book-steps {
+    .create-trip {
+      background: var(--gray-1);
+    }
+  }
+  .ez-trip {
+    background: var(--gray-1);
+    .card-column {
+      background: var(--gray-2);
+    }
+    .easy-card {
+      background: var(--gray-2);
+    }
+  }
+  .how-work {
+    .block-right i {
+      background: var(--gray-1);
+    }
+  }
+  .service {
+    background: rgba(18, 34, 76, 0.3);
+    .card-column {
+      background: var(--gray-1);
+    }
+  }
+  .go-plan {
+    background: rgba(35, 38, 47, 0.7);
+  }
+  .footer {
+    .subcrible-email {
+      background: var(--dark);
+      input {
+        background: var(--dark);
+      }
+    }
+  }
+}
